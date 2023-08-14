@@ -1,0 +1,21 @@
+/***************************************************************/
+/* Author  	: Ahmed Hassan     			 ***********************/
+/* Date		: 03 DEC 2022				 ***********************/
+/* Layer   	: MCAL           		   	 ***********************/
+/* SWC      : USART           			 ***********************/
+/* Version 	: 1.00             			 ***********************/
+/***************************************************************/
+#ifndef USART_INTERFACE_H_
+#define USART_INTERFACE_H_
+
+void USART1_voidInit(void);
+
+void USART1_voidSendDataSynch(u8 Copy_u8Data);
+
+void USART1_voidSendStringSynch(const char *Copy_pcString);
+
+u8 USART1_u8ReceiveDataSynch(void);
+
+
+
+#endif	/* USART_INTERFACE_H_ */
